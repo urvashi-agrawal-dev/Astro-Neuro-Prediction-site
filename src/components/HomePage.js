@@ -51,6 +51,18 @@ const HomePage = () => {
 
   const typingSpeed = 100;
   const pauseBetweenQueries = 1500;
+  const color = "#784585";
+  
+    <div>
+      {searchQueries.map((query, index) => (
+        <p key={index} style={{ color: 'red' }}>
+          {query}
+        </p>
+      ))}
+    </div>
+  
+
+
   useEffect(() => {
     if (textareaRef.current) {
       textareaRef.current.style.height = 'auto';
@@ -107,23 +119,21 @@ const HomePage = () => {
         {/* Desktop Navigation */}
         <nav className="hidden md:flex space-x-6">
           <a className="text-gray-700 hover:text-black transition" href="#">
-            Platform
+            Birth Details(Kundali)
           </a>
           <a className="text-gray-700 hover:text-black transition" href="#">
-            Case Studies
+            Numerology
           </a>
           <a className="text-gray-700 hover:text-black transition" href="#">
-            Blog
+            Astrology
           </a>
           <a className="text-gray-700 hover:text-black transition" href="#">
-            Docs
+            Horoscope
           </a>
           <a className="text-gray-700 hover:text-black transition" href="#">
             Login
           </a>
-          <a className="text-gray-700 hover:text-black transition" href="#">
-            Signup
-          </a>
+          
         </nav>
 
         {/* Mobile Menu Button */}
@@ -165,12 +175,7 @@ const HomePage = () => {
           )}
         </button>
 
-        {/* Desktop Buttons */}
-        <div className="hidden md:flex space-x-4">
-          <button className="border border-gray-700 text-gray-700 px-4 py-2 rounded hover:bg-gray-100 transition">
-            Sign in
-          </button>
-        </div>
+      
       </header>
 
       {/* Mobile Navigation Menu */}
@@ -188,12 +193,8 @@ const HomePage = () => {
           <a className="block py-2 text-gray-700 hover:text-black" href="#">
             Docs
           </a>
-          <div className="mt-4">
-            <button className="block w-full border border-gray-700 text-gray-700 px-4 py-2 rounded mb-2 hover:bg-gray-100 transition"
-             onClick={() => navigate("/chat")}>
-              Sign in
-            </button>
-          </div>
+          
+            
         </nav>
       )}
 
@@ -214,92 +215,92 @@ const HomePage = () => {
 </h1>
 
       <p className="max-w-2xl mx-auto text-lg sm:text-xl text-gray-500 mb-8 sm:mb-12 px-4">
-      SoulBuddy offers AI-powered personalized spiritual guidance using astrology and numerology, based on your birth details. Get customized horoscopes, recommendations, and chatbot advice to unlock your potential and find inner peace
-      </p>
+      SoulBuddy offers AI spiritual guidance with personalized astrology and numerology insights.      </p>
 
-      <div className="max-w-4xl mx-auto mb-8 sm:mb-12 px-4 w-full">
-        <div className="flex flex-col sm:flex-row items-center border rounded-lg shadow-lg p-3 sm:p-4 bg-gray-50 w-full">
-          {/* Desktop Icons with vertical centering */}
-          <div className="hidden sm:flex items-center space-x-2 mr-3 flex-shrink-0 self-center">
-            <div className="flex items-center justify-center w-10 h-10 rounded-lg border-2 border-gray-200">
-              <Paperclip className="text-gray-500" size={20} />
-            </div>
-            <div className="flex items-center justify-center w-10 h-10">
-              <DatabaseZap className="text-gray-500" size={20} />
-            </div>
-            <div className="flex items-center justify-center w-10 h-10">
-              <Globe className="text-gray-500" size={20} />
-            </div>
-          </div>
+<div className="max-w-4xl mx-auto mb-8 sm:mb-12 px-4 w-full">
+  <div className="flex flex-col sm:flex-row items-center border rounded-lg shadow-lg p-3 sm:p-4 bg-gray-50 w-full">
+    {/* Desktop Icons with vertical centering */}
+    <div className="hidden sm:flex items-center space-x-2 mr-3 flex-shrink-0 self-center">
+      <div className="flex items-center justify-center w-10 h-10 rounded-lg border-2 border-gray-200">
+        <Paperclip className="text-[#784585]" size={20} />
+      </div>
+      <div className="flex items-center justify-center w-10 h-10">
+        <DatabaseZap className="text-[#784585]" size={20} />
+      </div>
+      <div className="flex items-center justify-center w-10 h-10">
+        <Globe className="text-[#784585]" size={20} />
+      </div>
+    </div>
 
-          {/* Search Input at Top for Mobile */}
-          <div className="w-full mb-4 sm:mb-0 flex justify-center">
-            <textarea
-              ref={textareaRef}
-              value={displayedText}
-              readOnly
-              className="w-full text-gray-700 bg-transparent focus:outline-none text-base sm:text-lg resize-none overflow-hidden min-h-[24px]"
-              rows={1}
-              style={{ height: 'auto', minHeight: '24px' }}
-            />
-          </div>
+    {/* Search Input at Top for Mobile */}
+    <div className="w-full mb-4 sm:mb-0 flex justify-center">
+      <textarea
+        ref={textareaRef}
+        value={displayedText}
+        readOnly
+        className="w-full text-[#784585] bg-transparent focus:outline-none text-base sm:text-lg resize-none overflow-hidden min-h-[24px]"
+        rows={1}
+        style={{ height: 'auto', minHeight: '24px' }}
+      />
+    </div>
 
-          {/* Mobile Icons Row with increased top margin */}
-          <div className="flex sm:hidden items-center justify-between w-full mt-2 px-2">
-            <div className="flex items-center space-x-3">
-              <div className="flex items-center justify-center w-10 h-10 rounded-lg border-2 border-gray-200">
-                <Paperclip className="text-gray-500" size={20} />
-              </div>
-              <div className="flex items-center justify-center w-10 h-10 border-2 border-gray-200 rounded-lg">
-                <DatabaseZap className="text-gray-500" size={20} />
-              </div>
-              <div className="flex items-center justify-center w-10 h-10 border-2 border-gray-200 rounded-lg">
-                <Globe className="text-gray-500" size={20} />
-              </div>
-            </div>
-
-            <div
-              className={`flex-shrink-0 flex items-center justify-center w-10 h-10 rounded-lg transition-colors ${
-                displayedText.length > 0 ? "bg-black" : "bg-gray-200"
-              }`}
-            >
-              <ArrowUp
-                className={`${displayedText.length > 0 ? "text-white" : "text-gray-500"}`}
-                size={20}
-              />
-            </div>
-          </div>
-
-          {/* Desktop Project Button and Arrow with vertical centering */}
-          <div className="hidden sm:flex items-center space-x-3 flex-shrink-0 self-center">
-            <button className="flex items-center border rounded-lg px-4 py-2 bg-white text-gray-500">
-              <Plus className="mr-2" size={16} />
-              <span>Project</span>
-            </button>
-
-            <div
-              className={`flex items-center justify-center w-10 h-10 rounded-lg transition-colors ${
-                displayedText.length > 0 ? "bg-black" : "bg-gray-200"
-              }`}
-            >
-              <ArrowUp
-                className={`${displayedText.length > 0 ? "text-white" : "text-gray-500"}`}
-                size={20}
-              />
-            </div>
-          </div>
+    {/* Mobile Icons Row with increased top margin */}
+    <div className="flex sm:hidden items-center justify-between w-full mt-2 px-2">
+      <div className="flex items-center space-x-3">
+        <div className="flex items-center justify-center w-10 h-10 rounded-lg border-2 border-gray-200">
+          <Paperclip className="text-[#784585]" size={20} />
+        </div>
+        <div className="flex items-center justify-center w-10 h-10 border-2 border-gray-200 rounded-lg">
+          <DatabaseZap className="text-[#784585]" size={20} />
+        </div>
+        <div className="flex items-center justify-center w-10 h-10 border-2 border-gray-200 rounded-lg">
+          <Globe className="text-[#784585]" size={20} />
         </div>
       </div>
 
+      <div
+        className={`flex-shrink-0 flex items-center justify-center w-10 h-10 rounded-lg transition-colors ${
+          displayedText.length > 0 ? "bg-[#784585]" : "bg-gray-200"
+        }`}
+      >
+        <ArrowUp
+          className={`${displayedText.length > 0 ? "text-white" : "text-[#784585]"}`}
+          size={20}
+        />
+      </div>
+    </div>
+
+    {/* Desktop Project Button and Arrow with vertical centering */}
+    <div className="hidden sm:flex items-center space-x-3 flex-shrink-0 self-center">
+
+
+      <div
+        className={`flex items-center justify-center w-10 h-10 rounded-lg transition-colors ${
+          displayedText.length > 0 ? "bg-[#784585]" : "bg-gray-200"
+        }`}
+      >
+        <ArrowUp
+          className={`${displayedText.length > 0 ? "text-white" : "text-[#784585]"}`}
+          size={20}
+        />
+      </div>
+    </div>
+  </div>
+</div>
+
+
       <div className="flex flex-col sm:flex-row justify-center gap-4 px-4">
-        <button className="w-full sm:w-auto px-6 sm:px-8 py-3 bg-black text-white rounded-lg hover:bg-black-700 transition text-base sm:text-lg font-medium"
-         onClick={() => navigate("/chat")}>
-          Get Started Free
-        </button>
-        <button className="w-full sm:w-auto px-6 sm:px-8 py-3 border border-gray-300 rounded-lg hover:bg-gray-50 transition text-base sm:text-lg font-medium"
-         onClick={() => navigate("/anc")}> 
-          How to use
-        </button>
+      <button className="w-full sm:w-auto px-6 sm:px-8 py-3 bg-[#784585] text-white rounded-lg hover:bg-black-700 transition text-base sm:text-lg font-medium"
+ onClick={() => navigate("/chat")}>
+  Get Started Free
+</button>
+<button
+  className="w-full sm:w-auto px-6 sm:px-8 py-3 border border-[#784585] rounded-lg hover:bg-gray-50 transition text-base sm:text-lg font-medium"
+  onClick={() => navigate("/anc")}
+>
+  How to use
+</button>
+
       </div>
     </div>
   </div>
@@ -313,9 +314,8 @@ const HomePage = () => {
 
  <Flow/>
 
- <Tasktable/>
 
- <Banner/>
+
 
       {/* Footer */}
       <footer className="bg-black text-white py-8 px-6 md:px-12">
