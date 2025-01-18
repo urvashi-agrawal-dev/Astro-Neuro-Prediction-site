@@ -27,29 +27,26 @@ const HomePage = () => {
 
 
   const searchQueries = [
-    "Match portfolio with DevOps engineer requirements",
-    "Find tech companies hiring React developers",
-    "Generate personalized cold email for UI/UX position",
-    "Match portfolio to Python developer roles",
-    "Find companies hiring backend engineers",
-    "Generate cold email for data scientist position",
-    "Personalized email for cloud architect jobs",
-    "Suggest past projects for ML engineer",
-    "Find startups looking for AI developers",
-    "Cold email template for mobile app developers",
-    "Match projects to full-stack developer jobs",
-    "Find hiring managers for DevOps roles",
-    "Generate email for front-end developer opportunity",
-    "Showcase portfolio for blockchain developer positions",
-    "Find remote jobs for Java developers",
-    "Email template for cybersecurity consultant roles",
-    "Match React projects with hiring companies",
-    "Generate email for senior software engineer",
-    "Find companies hiring cloud engineers",
-    "Suggest email for game developer job",
-    "Match portfolio with startup tech openings",
-    "Personalized outreach for embedded systems engineer",
-    "Find fintech companies hiring Python developers"
+"Generate personalized birth chart insights",
+"Find gemstone recommendations based on astrology",
+"Daily horoscope predictions for personal growth",
+"Monthly horoscope insights for relationships",
+"Ritual suggestions based on numerology",
+"Astrological do’s and don’ts for career guidance",
+"Meditation suggestions aligned with horoscope",
+"Sleep content tailored to astrological needs",
+"Interactive spiritual advice chatbot",
+"Generate personalized pooja recommendations",
+"Astrology-based social connection insights",
+"Numerology-based personal growth suggestions",
+"Quick spiritual advice chatbot interactions",
+"Explain astrological predictions quickly",
+"Generate career insights through astrology",
+"Find personalized spiritual rituals",
+"Astrological insights for family connections",
+"Explore personalized spiritual content",
+"Kundali generation for career advice",
+"Horoscope-based workout recommendations",
   ];
 
   const typingSpeed = 100;
@@ -99,7 +96,7 @@ const HomePage = () => {
   }, [currentQueryIndex]);
 
   return (
-    <div className="bg-white text-gray-900 font-sans">
+    <div style={{ backgroundColor: '#fae9d5' }} className="text-gray-900 font-sans">
       {/* Header */}
       <header className="flex justify-between items-center py-4 px-6 md:px-8">
         {/* Logo */}
@@ -205,22 +202,19 @@ const HomePage = () => {
 
   <div className="flex-1 flex flex-col justify-center items-center px-4 sm:px-6 lg:px-8">
     <div className="max-w-7xl mx-auto w-full text-center">
-      <h1 className="text-4xl sm:text-5xl md:text-6xl font-bold tracking-tight text-black mb-4 sm:mb-8 px-4">
-      From Data to
-      <span 
-  className="block sm:inline text-transparent bg-clip-text"
-  style={{
-    background: "linear-gradient(to right, #ff7eb3, #ff758c, #8b5ff5)",
-    WebkitBackgroundClip: "text",
-    WebkitTextFillColor: "transparent"
-  }}
-> Deals.
-</span>
-
-      </h1>
+    <h1 className="text-4xl sm:text-5xl md:text-6xl font-bold tracking-tight text-black mb-4 sm:mb-8 px-4">
+  Your AI Guide to Astrological and Numerological 
+  <span 
+    className="block sm:inline"
+    style={{
+      color: "#784585"
+    }}
+  > Wisdom.
+  </span>
+</h1>
 
       <p className="max-w-2xl mx-auto text-lg sm:text-xl text-gray-500 mb-8 sm:mb-12 px-4">
-        Generate personalized emails, connect with potential clients, and scale your outreach efforts using AI-powered tools.
+      SoulBuddy offers AI-powered personalized spiritual guidance using astrology and numerology, based on your birth details. Get customized horoscopes, recommendations, and chatbot advice to unlock your potential and find inner peace
       </p>
 
       <div className="max-w-4xl mx-auto mb-8 sm:mb-12 px-4 w-full">

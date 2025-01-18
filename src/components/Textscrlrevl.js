@@ -29,13 +29,13 @@ const Textscrlrevl = () => {
   return (
     <div className="min-h-screen bg-white flex flex-col items-center justify-center text-center py-8 md:py-20 px-4 sm:px-6 lg:px-8">
       <p className="fade-in text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-light text-gray-700 leading-snug">
-      We provide <span className="font-semibold text-black">AI-powered</span> solution for <span className="font-semibold text-black">software service companies</span> automating personalized <span className="font-semibold text-black">cold emails</span>.
+        We provide <span className="font-semibold text-black">AI-driven spiritual guidance</span> through <span className="font-semibold text-black">astrology and numerology</span>, delivering personalized <span className="font-semibold text-black">insights</span> and recommendations.
       </p>
       <p className="fade-in text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-light text-gray-700 mt-4 leading-snug">
-      to streamline <span className="font-semibold text-black">outreach,</span> improve <span className="font-semibold text-black">efficiency,</span> and enhance client <span className="font-semibold text-black">engagement</span>.
+        to enhance <span className="font-semibold text-black">personal growth,</span> improve <span className="font-semibold text-black">spiritual well-being,</span> and foster deeper <span className="font-semibold text-black">connections</span>.
       </p>
       <button className="fade-in mt-8 px-6 py-3 bg-black text-white text-lg rounded-full hover:bg-gray-800 transition duration-300">
-        SEE OUR WORK <i className="fas fa-arrow-right"></i>
+        DISCOVER MORE <i className="fas fa-arrow-right"></i>
       </button>
     </div>
   );
