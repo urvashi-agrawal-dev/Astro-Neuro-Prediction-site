@@ -204,7 +204,7 @@ const HomePage = () => {
   <div className="flex-1 flex flex-col justify-center items-center px-4 sm:px-6 lg:px-8">
     <div className="max-w-7xl mx-auto w-full text-center">
     <h1 className="text-4xl sm:text-5xl md:text-6xl font-bold tracking-tight text-black mb-4 sm:mb-8 px-4">
-  Your AI Guide to Astrological and Numerological 
+  HI urvashi
   <span 
     className="block sm:inline"
     style={{
