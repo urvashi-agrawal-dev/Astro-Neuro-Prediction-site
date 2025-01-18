@@ -113,7 +113,7 @@ const HomePage = () => {
       <header className="flex justify-between items-center py-4 px-6 md:px-8">
         {/* Logo */}
         <div className="flex items-center">
-          <span className="ml-2 text-xl font-semibold">OutReach</span>
+          <span className="ml-2 text-xl font-semibold">SoulBuddy </span>
         </div>
 
         {/* Desktop Navigation */}
@@ -321,7 +321,7 @@ const HomePage = () => {
       <footer className="bg-black text-white py-8 px-6 md:px-12">
         <div className="flex flex-col md:flex-row justify-between items-center">
           <div className="mb-6 md:mb-0">
-            <h2 className="text-xl font-semibold">OutReach</h2>
+            <h2 className="text-xl font-semibold">SoulBuddy </h2>
           </div>
 
           <div className="flex flex-col md:flex-row space-y-4 md:space-y-0 md:space-x-8">
@@ -350,7 +350,7 @@ const HomePage = () => {
         </div>
 
         <div className="text-center mt-6 text-sm text-gray-400">
-          © 2024 OutReach. All rights reserved.
+          © 2024 SoulBuddy . All rights reserved.
         </div>
       </footer>
     </div>
