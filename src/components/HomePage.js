@@ -296,11 +296,22 @@ const HomePage = () => {
 </button>
 <button
   className="w-full sm:w-auto px-6 sm:px-8 py-3 border border-[#784585] rounded-lg hover:bg-gray-50 transition text-base sm:text-lg font-medium"
-  onClick={() => navigate("/anc")}
+  onClick={() => navigate("/pla")}
 >
-  How to use
+  See Rashi
 </button>
-
+<button
+  className="w-full sm:w-auto px-6 sm:px-8 py-3 border border-[#784585] rounded-lg hover:bg-gray-50 transition text-base sm:text-lg font-medium"
+  onClick={() => navigate("/epla")}
+>
+  See Planets
+</button>
+<button
+  className="w-full sm:w-auto px-6 sm:px-8 py-3 border border-[#784585] rounded-lg hover:bg-gray-50 transition text-base sm:text-lg font-medium"
+  onClick={() => navigate("/Navmasa")}
+>
+Navamsa Chart
+</button>
       </div>
     </div>
   </div>

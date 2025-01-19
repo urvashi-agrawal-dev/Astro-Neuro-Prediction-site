@@ -40,6 +40,10 @@ import ChatAisection from "./components/ChatAisection";
 import ProtectedRoute from "./components/ProtectedRoute";
 import SearchBar from "./components/SearchBar";
 import Announcement from "./components/Announcement";
+import Planets from "./components/Planets";
+import Expla from "./components/Expla";
+import Navmasa from "./components/Navmasa";
+
 
 function App() {
   const [isAuthenticated, setIsAuthenticated] = useState(false);
@@ -56,6 +60,10 @@ function App() {
         <Route path="/aichat" element={<ChatAisection />} />
         <Route path="/search" element={<SearchBar />} />
         <Route path="/anc" element={<Announcement />} />
+        <Route path="/pla" element={<Planets />} />
+        <Route path="/epla" element={<Expla />} />
+        <Route path="/Navmasa" element={<Navmasa />} />
+     
 
 
         {/* Protected Chat Route */}
