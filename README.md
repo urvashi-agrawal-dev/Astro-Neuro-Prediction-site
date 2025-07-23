@@ -1,4 +1,8 @@
 Your AI Guide to Astrological and Numerological Wisdom
+
+
+
+
 Key Features
 AI-Driven Spiritual Insights
 Generate personalized spiritual guidance using advanced AI algorithms for astrology and numerology
